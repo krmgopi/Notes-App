@@ -1,0 +1,21 @@
+1.install and load yargs
+2.load notes.js into app.js
+3.create yargs command for read, write, remove and list in app.js
+4.define addNote function with title and body as params in notes.js 
+5.define loadNotes function in notes.js (also load fs --> require('fs))
+    -to load notes from notes.json if the file is already created
+    -if not create a new notes.json file
+    -use try catch block
+6.push the title and body into the notes array which is loadNotes
+7.create a function for saveNotes which receives a notes array and we have to stringify
+8.Save the stringified object in to notes.json using fs.writeFileSync
+9.Now every note we create will gets appended into notes.json file
+10.Now prevent duplicate notes being added using filter()
+
+//Removing a note
+1.create the builder for remove command
+2.call the removeNote from the remove command handler
+3.create the removeNote function in notes.js
+4.load the notes in removeNote()
+5.check for the title which is passed using the filter()
+6.save the newly created array
